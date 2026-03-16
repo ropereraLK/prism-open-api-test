@@ -1,0 +1,32 @@
+post:
+  summary: Login user
+  operationId: login
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: './request.yaml'
+
+  responses:
+    '200':
+      description: Login successful
+      content:
+        application/json:
+          schema:
+            $ref: './success-response.yaml'
+
+    '401':
+      description: Invalid credentials
+      content:
+        application/json:
+          schema:
+            $ref: './unauthorized-response.yaml'
+
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: './server-error-response.yaml'

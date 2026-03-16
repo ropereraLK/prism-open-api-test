@@ -1,0 +1,9 @@
+type: object
+properties:
+  error:
+    type: string
+    example: INTERNAL_SERVER_ERROR
+
+  message:
+    type: string
+    example: Something went wrong

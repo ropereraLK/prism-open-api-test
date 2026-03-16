@@ -1,0 +1,13 @@
+type: object
+properties:
+  accessToken:
+    type: string
+    example: jwt-token-example
+
+  tokenType:
+    type: string
+    example: Bearer
+
+  expiresIn:
+    type: integer
+    example: 3600

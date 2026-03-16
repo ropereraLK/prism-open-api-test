@@ -1,0 +1,11 @@
+openapi: 3.0.3
+info:
+  title: Prism OpenAPI Test
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:4010
+
+paths:
+  /auth/login:
+    $ref: './components/auth/login/endpoint.yaml'

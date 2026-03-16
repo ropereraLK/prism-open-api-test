@@ -1,12 +1,17 @@
-Check whether node, npm istalled
+Check whether node, npm installed
 node -v
 npm -v
 
-install prism
-npm install -g @stoplight/prism-cli
+Install dependencies
+npm install
 
-verify prism
-prism --version
+Start login API server
+npm start
 
-run prism
-prism mock openapi.yaml --dynamic
+You can now send a POST request to
+http://127.0.0.1:4010/api/login
+
+Behavior:
+- if body is:
+  { "username": "alan", "password": "alan" } -> 200
+- any other username/password -> 401

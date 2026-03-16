@@ -1,0 +1,12 @@
+{
+  "name": "prism-open-api-test-server",
+  "version": "1.0.0",
+  "description": "Simple login API server matching the OpenAPI spec",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
